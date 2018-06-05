@@ -30,11 +30,19 @@ public class Cat extends Animal{
         this.canHuntOtherAnimals = canHuntOtherAnimals;
     }
 
+    public String outputSomeValueToTheScreen() {
+
+        return "Name: " + name + ;
+    }
+
     @Override
     public String toString() {
 
-        return String.format("%s: %s %s: %s %s: %d %s: %d %s: %d %s: %b", "Name", getName(), "Color", getColor(), "Speed", getAmountOfSpeed(), "Power",
+        /* return String.format("%s: %s %s: %s %s: %d %s: %d %s: %d %s: %b", "Name", getName(), "Color", getColor(), "Speed", getAmountOfSpeed(), "Power",
                 getAmountOfPower(), "Number Of Legs", numberOfLegs, "Fight", canHuntOtherAnimals);
+                */
+
+        return super.toString() + String.format("%s: %d %s: %b", "Number Of Legs", numberOfLegs, "Fight", canHuntOtherAnimals) + " Animal Value: " + evaluateAnumalValue();
 
     }
 }

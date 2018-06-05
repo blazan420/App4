@@ -4,10 +4,10 @@ public class Animal extends Object{
 
     // Instance variables
 
-    private final String name;
-    private final String color;
-    private int amountOfSpeed;
-    private int amountOfPower;
+    protected final String name;
+    protected final String color;
+    protected int amountOfSpeed;
+    protected int amountOfPower;
 
     public Animal(String name, String color, int amountOfSpeed, int amountOfPower ){
 
@@ -33,10 +33,16 @@ public class Animal extends Object{
     public void setAmountOfPower(int amountOfPower){ this.amountOfPower = amountOfPower; }
     public  int getAmountOfPower(){ return amountOfPower; }
 
+    public int evaluateAnumalValue() {
+
+        int result = amountOfSpeed * amountOfPower;
+        return result;
+    }
+
     @Override
     public String toString() {
 
-        return String.format("%s: %s %s:%s %s: %d %s: %d", "Name: ", name, "Color ",  color, "Speed", amountOfSpeed, "Power", amountOfPower);
+        return String.format("%s: %s %s:%s %s: %d %s: %d ", "Name: ", name, "Color ",  color, "Speed", amountOfSpeed, "Power", amountOfPower);
 
 
     }
