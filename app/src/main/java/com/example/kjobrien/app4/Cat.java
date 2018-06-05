@@ -42,7 +42,7 @@ public class Cat extends Animal{
                 getAmountOfPower(), "Number Of Legs", numberOfLegs, "Fight", canHuntOtherAnimals);
                 */
 
-        return super.toString() + String.format("%s: %d %s: %b", "Number Of Legs", numberOfLegs, "Fight", canHuntOtherAnimals) + " Animal Value: " + evaluateAnumalValue();
+        return super.toString() + String.format("%s: %d %s: %b", "Number Of Legs", numberOfLegs, "Fight", canHuntOtherAnimals) + " Animal Value: " + evaluateAnumalValue() + " ";
 
     }
 }

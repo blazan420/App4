@@ -27,7 +27,7 @@ public class Lion extends Cat {
     @Override //type tostr then press ctrl+space to auto generate
     public String toString() {
 
-        return super.toString() + String.format("&s: %b", "Brave", isBrave);
+        return super.toString() + String.format("&ss: %b", "Brave", isBrave);
 
     }
 }
