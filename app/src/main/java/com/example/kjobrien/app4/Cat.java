@@ -1,6 +1,6 @@
 package com.example.kjobrien.app4;
 
-public class Cat extends Object{
+public class Cat extends Animal{
 
     // Instance variables
 
@@ -11,8 +11,9 @@ public class Cat extends Object{
 
     // Constructor
 
-    public Cat(int numberOfLegs, boolean canHuntOtherAnimals){
+    public Cat(String name, String color, int amountOfSpeed, int amountOfPower, int numberOfLegs, boolean canHuntOtherAnimals){
 
+        super(name, color, amountOfSpeed, amountOfPower);
 
         this.numberOfLegs = numberOfLegs;
         this.canHuntOtherAnimals = canHuntOtherAnimals;

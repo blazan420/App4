@@ -12,7 +12,6 @@ public class Animal extends Object{
     public Animal(String name, String color, int amountOfSpeed, int amountOfPower ){
 
         // Initialized these instance variables
-
         this.name = name;
         this.color = color;
         this.amountOfSpeed = amountOfSpeed;
