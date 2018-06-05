@@ -32,7 +32,7 @@ public class Cat extends Animal{
 
     public String outputSomeValueToTheScreen() {
 
-        return "Name: " + name + ;
+        return "Name: " + getName() + "Color " + getColor() + " Speed " + getAmountOfSpeed() + "Power " + getAmountOfPower();
     }
 
     @Override

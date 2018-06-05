@@ -4,10 +4,10 @@ public class Animal extends Object{
 
     // Instance variables
 
-    protected final String name;
-    protected final String color;
-    protected int amountOfSpeed;
-    protected int amountOfPower;
+    private final String name;
+    private final String color;
+    private int amountOfSpeed;
+    private int amountOfPower;
 
     public Animal(String name, String color, int amountOfSpeed, int amountOfPower ){
 
@@ -42,7 +42,7 @@ public class Animal extends Object{
     @Override
     public String toString() {
 
-        return String.format("%s: %s %s:%s %s: %d %s: %d ", "Name: ", name, "Color ",  color, "Speed", amountOfSpeed, "Power", amountOfPower);
+        return String.format("%s: %s %s:%s %s: %d %s: %d ", "Name: ", name, "Color ",  color, "Speed ", amountOfSpeed, "Power ", amountOfPower);
 
 
     }
