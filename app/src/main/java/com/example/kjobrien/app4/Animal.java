@@ -21,29 +21,17 @@ public class Animal extends Object{
 
     // Getter Methods
 
-    public String getName(){
-        return name;
-    }
-
-    public String getColor(){
-        return color;
-    }
+    public String getName(){ return name; }
+    public String getColor(){return color; }
 
     public void setAmountOfSpeed(int amountOfSpeed){
         this.amountOfSpeed = amountOfSpeed;
     }
 
-    public int getAmountOfSpeed(){
-        return amountOfSpeed;
-    }
+    public int getAmountOfSpeed(){ return amountOfSpeed; }
 
-    public void setAmountOfPower(int amountOfPower){
-        this.amountOfPower = amountOfPower;
-    }
-
-    public  int getAmountOfPower(){
-        return amountOfPower;
-    }
+    public void setAmountOfPower(int amountOfPower){ this.amountOfPower = amountOfPower; }
+    public  int getAmountOfPower(){ return amountOfPower; }
 
     @Override
     public String toString() {

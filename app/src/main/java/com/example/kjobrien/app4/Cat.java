@@ -4,8 +4,6 @@ public class Cat extends Animal{
 
     // Instance variables
 
-
-
     private final int numberOfLegs;
     private boolean canHuntOtherAnimals;
 
@@ -18,8 +16,6 @@ public class Cat extends Animal{
         this.numberOfLegs = numberOfLegs;
         this.canHuntOtherAnimals = canHuntOtherAnimals;
     }
-
-
 
 
     public int getNumberOfLegs() {
@@ -37,6 +33,8 @@ public class Cat extends Animal{
     @Override
     public String toString() {
 
+        return String.format("%s: %s %s: %s %s: %d %s: %d %s: %d %s: %b", "Name", getName(), "Color", getColor(), "Speed", getAmountOfSpeed(), "Power",
+                getAmountOfPower(), "Number Of Legs", numberOfLegs, "Fight", canHuntOtherAnimals);
 
     }
 }
